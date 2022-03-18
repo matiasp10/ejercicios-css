@@ -1,0 +1,97 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --white-transp: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  --lexend: 'Lexend Deca', sans-serif;
+  --big-shoulders: 'Big Shoulders Display', cursive;
+}
+
+body {
+  margin: 0;
+  font-family: var(--lexend);
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 400px;
+  width: 800px;
+}
+
+.title {
+  font-family: var(--big-shoulders);
+  color: var(--very-light-gray);
+  font-size: 34px;
+}
+
+.parrafo {
+  color: var(--white-transp);
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+  padding: 40px;
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+  padding: 40px;
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  padding: 40px;
+  border-radius: 0 10px 10px 0;
+}
+
+.btn {
+  border: 2px solid white;
+  background-color: var(--very-light-gray);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sdn {
+  color: var(--bright-orange);
+  font-family: var(--lexend);
+}
+
+.sv {
+  color: var(--dark-cyan);
+  font-family: var(--lexend);
+}
+
+.lux {
+  color: var(--very-dark-cyan);
+  font-family: var(--lexend);
+}
+
+.sdn:active {
+  background-color: var(--bright-orange);
+  color: white;
+}
+
+.sv:active {
+  background-color: var(--dark-cyan);
+  color: white;
+}
+
+.lux:active {
+  background-color: var(--very-dark-cyan);
+  color: white;
+}

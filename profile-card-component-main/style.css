@@ -1,0 +1,30 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --Dark-gray: hsl(0, 0%, 59%);
+
+  --kumbh: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--kumbh);
+}
+
+.container {
+  background-image: url(/images/bg-pattern-top.svg);
+  background-size: 30px 30px;
+  background-repeat: none;
+  background-color: var(--Dark-cyan);
+  width: 300px;
+  height: 300px;
+}
